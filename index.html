@@ -95,6 +95,34 @@
                     Your browser does not support the video tag.
                 </video>
             </section>
+            <hr>
+            <section>
+                <h2 id="form">Form</h2>
+                <form action="test.php" method = "get">
+                    <fieldset>
+                        <legend>Welcome Form</legend>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name"><br>
+                        <label for="cs">What's your major:</label>
+                        <input list="cs" name="cs" id="cs">
+                        <datalist id="cs">
+                            <option value="Computer Science"></option>
+                            <option value="Other"></option>
+                        </datalist>
+                        <br><label for="select">Choose the year you graduate</label>
+                        <select id="select">
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="else">Else</option>
+                        </select>
+                        <br><textarea id="intro" name="intro" rows="4" cols="20">
+                            Please give a brief intro about yourself
+                        </textarea>
+                    </fieldset>
+                </form>
+            </section>
         </main>
     </body>
 </html>
