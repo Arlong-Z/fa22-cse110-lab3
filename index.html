@@ -98,13 +98,13 @@
             <hr>
             <section>
                 <h2 id="form">Form</h2>
-                <form action="test.php" method = "get">
+                <form method = "get">
                     <fieldset>
                         <legend>Welcome Form</legend>
                         <label for="name">Name</label>
                         <input type="text" id="name" name="name"><br>
-                        <label for="cs">What's your major:</label>
-                        <input list="cs" name="cs" id="cs">
+                        <label for="cs_">What's your major:</label>
+                        <input list="cs" name="cs" id="cs_">
                         <datalist id="cs">
                             <option value="Computer Science"></option>
                             <option value="Other"></option>
@@ -119,7 +119,8 @@
                         </select>
                         <br><textarea id="intro" name="intro" rows="4" cols="20">
                             Please give a brief intro about yourself
-                        </textarea>
+                        </textarea><br>
+                        <button id="b" onclick="alert('Welcome to the note!')">Test</button>
                     </fieldset>
                 </form>
             </section>
