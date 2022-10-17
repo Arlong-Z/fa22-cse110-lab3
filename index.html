@@ -4,21 +4,22 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="with=device-width, initial-scale=1.0"/>
         <link rel="my cat" href="https://github.com/Arlong-Z/zelong.github.io/blob/044ecc685c7fbe6b0f6051357e23a707d1342e01/WechatIMG251.jpeg">
+        <link rel="stylesheet" href="style.css">
         <title>Meeting Minutes</title>
     </head>
     <body>
         <header>
-            <div>Quick Search</div>
+            <div class="qs">Quick Search</div>
             <nav>
-                <ul>
+                <ul class="quick_search">
                     <li><a href="#title">Title</a></li>
-                    <li><a href="#subtitle1">Subtitle</a></li>
+                    <li><a href="#subtitle1" target="_blank">Subtitle</a></li>
                     <li><a href="#attendence">Attendence</a></li>
-                    <li><a href="#Agenda">Agenda</a></li>
+                    <li><a href="#Agenda" target="_blank">Agenda</a></li>
                     <li><a href="#notes">Notes</a> </li>
-                    <li><a href="#music">Audio Recording</a></li>
+                    <li><a href="#music" target="_blank">Audio Recording</a></li>
                     <li><a href="#video">Video Recording</a></li>
-                    <li><a href="#form">Form</a></li>
+                    <li><a href="#form" target="_blank">Form</a></li>
                 </ul>
             </nav>
         </header>
@@ -26,71 +27,87 @@
             <h1 id="title">Group Meeting</h1>
             <section>
             <h2 id="subtitle1">First Group Meeting</h2>
-            <p>The first group meeting was held on Oct 5, 2022 at the Warren Letture Hall. Dissusing the schedule of the progject and the time for the comming meeting.</p>
+            <p id="time">The first group meeting was held on Oct 5, 2022 at the Warren Letture Hall. Dissusing the schedule of the progject and the time for the comming meeting.</p>
             </section>
             <hr>
             <section>
                 <h2 id="attendence">Attendence</h2>
-                <b>TA:</b>
-                <ol>
-                    <li>Priyanka Bhatia</li>
-                </ol>
-                <b>Group Leaders:</b>
-                <ol>
-                    <li>Aaryan Tiwary</li>
-                    <li>Guidong Luo</li>
-                </ol>
-                <b>Group Members:</b>
-                <ol>
-                    <li>Akanksha Pandey</li>
-                    <li>Lauren Lee</li>
-                    <li>Duy Vu</li>
-                    <li>Zelong Zhou</li>
-                    <li>Alex Zhang</li>
-                    <li>Kevin Lam</li>
-                    <li>Jinya Jiang</li>
-                    <li>Priya Senthilkumar</li>
-                </ol>
+                <section id="a_list">
+                    <div class="attendence-container">
+                        <b>TA:</b>
+                        <div class="TA-container">
+                            <div class="TA-item">Priyanka Bhatia</div>
+                        </div>
+                        <b>Group Leaders:</b>
+                        <div class="leader-container">
+                            <div class="leader-item">Aaryan Tiwary</div>
+                            <div class="leader-item">Guidong Luo</div>
+                        </div>
+                        <b>Group Members:</b>
+                        <div class="members-container">
+                            <div class="members-item">Akanksha Pandey</div>
+                            <div class="members-item">Lauren Lee</div>
+                            <div class="members-item">Duy Vu</div>
+                            <div class="members-item">Zelong Zhou</div>
+                            <div class="members-item">Alex Zhang</div>
+                            <div class="members-item">Kevin Lam</div>
+                            <div class="members-item">Jinya Jiang</div>
+                            <div class="members-item">Priya Senthilkumar</div>
+                        </div>
+                    </div>
+                </section>
             </section>
             <hr>
             <section>
                <h2 id="Agenda">Agenda</h2>
-               <ul>
-                    <li><h3>Knowing each other</h3><i>Self introduction</i></li>
-                    <li><h3>Next Meeting</h3></li>
+               <ul id="agenda_list">
+                    <li class="agenda-f"><h3>Knowing each other</h3>
+                        <div>
+                            <i>Self introduction</i>
+                        </div>
+                    </li>
+                    <li class="agenda-s"><h3>Next Meeting</h3></li>
                </ul>
             </section>
             <hr>
             <section>
                 <h2 id="notes">Notes</h2>
-                <details>
-                    <summary><span style="color:rgb(72, 28, 216)">Inperson meeting</span></summary>
-                    <p><strong>Warren Letture Hall 2001</strong><br>
-                    8:00pm Tuesday</p>
-                </details>
-                <details>
-                    <summary><span style="color:red">Zoom meeting</span></summary>
-                    <p><em>Link is not available yet</em><br>
-                    8:00pm Tuesday</p>
-                </details>
-                <details>
-                    <summary><span style="color:green">Available Time</span></summary>
-                    <a href="https://www.when2meet.com/?17123696-cQqEg">Live Available Table</a>
-                    <img src="AT.png" alt="Group Available Time">
-                </details>
+                <section id="n">
+                    <div>
+                        <details>
+                            <summary><span style="color:rgb(72, 28, 216)">Inperson meeting</span></summary>
+                            <p><strong>Warren Letture Hall 2001</strong><br>
+                            8:00pm Tuesday</p>
+                        </details>
+                    </div>
+                    <div>
+                        <details>
+                            <summary><span style="color:red">Zoom meeting</span></summary>
+                            <p><em>Link is not available yet</em><br>
+                            8:00pm Tuesday</p>
+                        </details>
+                    </div>
+                    <div>
+                        <details>
+                            <summary><span style="color:green">Available Time</span></summary>
+                            <a href="https://www.when2meet.com/?17123696-cQqEg">Live Available Table</a>
+                            <img src="AT.png" alt="Group Available Time">
+                        </details>
+                    </div>
+                </section>
             </section>
             <hr>
             <section>
                 <h2 id="music">Audio Recording(Music)</h2>
-                <audio controls>
+                <audio controls id="m">
                     <source src = "All_Out_Of_Love_Graham_Blvd.mp3" type="audio/mpeg">
                     Your browser does not support the audio tag.
                 </audio>
             </section>
             <hr>
-            <section>
+            <section class="video-display">
                 <h2 id="video">Video Recording(Puppy)</h2>
-                <video controls width="320">
+                <video controls width="320" id="v">
                     <source src="puppy.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -117,16 +134,14 @@
                             <option value="2026">2026</option>
                             <option value="else">Else</option>
                         </select>
-                        <br><textarea id="intro" name="intro" rows="4" cols="20">
-                            Please give a brief intro about yourself
-                        </textarea><br>
+                        <br><textarea id="intro" name="intro" rows="5" cols="60">Please give a brief intro about yourself</textarea><br>
                         <button id="b" onclick="alert('Welcome to the note!')">Test</button>
                     </fieldset>
                 </form>
             </section>
         </main>
         <footer>
-            <div>Edited by Zelong</div>
+            <p>Edited by Zelong<p>
         </footer>
     </body>
 </html>
